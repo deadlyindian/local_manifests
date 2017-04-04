@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="LineageOS/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-14.1" />
+  <project name="deadlyindian/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="bliss7-caf" />
+  <project name="deadlyindian/lightning_kernel_oneplus_bacon" path="kernel/oneplus/msm8974" remote="github" revision="lightning-3.4-los" />
+  <project name="DirtyUnicorns/android_device_oppo_common" path="device/oppo/common" remote="github" revision="n7x-caf" />
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
+</manifest>
