@@ -12,7 +12,8 @@
 <project name="deadlyindian/android_system_bt" path="system/bt" remote="github" revision="n7x-caf" />
 <project name="deadlyindian/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="n7x" />
 <project name="deadlyindian/android_device_qcom_common" path="device/qcom/common" remote="github" revision="n7x-caf" />
-<project name="deadlyindian/lightning_kernel_oneplus_bacon" path="kernel/oneplus/msm8974" remote="github" revision="lineage_stock-n" />
+<project name="deadlyindian/lightning_kernel_oneplus_bacon" path="kernel/oneplus/msm8974" remote="github" revision="aosp-caf-n" />
+<project name="deadlyindian/android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="github" revision="n-mr2" />
 
 <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
 
