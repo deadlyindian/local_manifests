@@ -23,7 +23,6 @@
 <project name="deadlyindian/android_device_qcom_common" path="device/qcom/common" remote="github" revision="n7x-caf" />
 <project name="deadlyindian/thunder_kernel_oneplus_bacon" path="kernel/oneplus/msm8974" remote="github" revision="thunder" />
 <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
 
 <!-- ant-wireless, cryptfs_hw, boringssl-compat -->
 <project name="LineageOS/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="cm-14.1" />
