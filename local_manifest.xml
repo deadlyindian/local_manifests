@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+<remote name="bitbucket"
+    fetch="https://bitbucket.org/" />
+
+<!-- Toolchain -->
+<project name="matthewdalex/arm-eabi-7.x" path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.x" remote="bitbucket" revision="master" />
+
 <!-- We don't need these -->
 <remove-project name="android_hardware_ril" />
 <remove-project name="android_hardware_qcom_wlan" />
@@ -29,7 +35,7 @@
 <project name="LineageOS/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="github" revision="cm-14.1" />
 <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-14.1" />
 <project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-14.1" />
+<project name="deadlyindian/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="n7x" />
 
 <!-- HALs -->
 <project name="LineageOS/android_hardware_ril" path="hardware/ril" remote="github" revision="cm-14.1" />
