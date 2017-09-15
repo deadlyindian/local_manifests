@@ -17,7 +17,10 @@
 <remove-project name="android_device_qcom_common" />
 <remove-project name="android_hardware_qcom_audio" />
 <remove-project name="android_hardware_qcom_media" />
-<remove-project name="android_external_wpa_supplicant_8" />
+<remove-project name="android_frameworks_base" />
+<remove-project name="android_frameworks_av" />
+<remove-project name="android_system_core" />
+<remove-project name="android_build" />
 
 <!-- Missing repos from DU -->
 <project name="DirtyUnicorns/android_system_qcom" path="system/qcom" remote="github" revision="n7x-caf" />
@@ -33,12 +36,17 @@
 <project name="sultanxda/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1-sultan" />
 <project name="sultanxda/android_hardware_qcom_camera" path="hardware/qcom/camera" remote="github" revision="bacon/cm-14.1-sultan" />
 
+<!-- Modified DU repos -->
+<project name="deadlyindian/DirtyUnicorns-N" path="build" remote="github" revision="android_build" />
+<project name="deadlyindian/DirtyUnicorns-N" path="frameworks/base" remote="github" revision="frameworks_base" />
+<project name="deadlyindian/DirtyUnicorns-N" path="frameworks/av" remote="github" revision="frameworks_av" />
+<project name="deadlyindian/DirtyUnicorns-N" path="system/core" remote="github" revision="system_core" />
+
 <!-- ant-wireless, cryptfs_hw, boringssl-compat, Snap -->
 <project name="LineageOS/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="cm-14.1" />
 <project name="LineageOS/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="github" revision="cm-14.1" />
 <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-14.1" />
 <project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="cm-14.1" />
-<project name="DirtyUnicorns/android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="github" revision="n7x-caf" />
 <project name="deadlyindian/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="n7x" />
 <project name="sultanxda/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="bacon/cm-14.1-sultan" />
 
