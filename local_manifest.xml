@@ -16,8 +16,8 @@
   <remove-project name="android_system_vold" />
   <remove-project name="android_build" />
   <remove-project name="android_system_sepolicy" />
-  <remove-project name="android_hardware_libhardware" />
-  <remove-project name="android_hardware_keymaster" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="android_hardware_qcom_keymaster" />
 
 <!-- Remotes -->
   <remote name="bitbucket" fetch="https://bitbucket.org/" />
