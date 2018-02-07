@@ -84,6 +84,5 @@
   <project name="DirtyUnicorns/android_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="o8x" />
   <project name="DirtyUnicorns/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" remote="github" revision="o8x" />
   <project name="DirtyUnicorns/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="o8x" />
-  <project name="DirtyUnicorns/android_packages_apps_changelog" path="packages/apps/Changelog" remote="github" revision="o8x" />
 
 </manifest>
