@@ -73,6 +73,8 @@
   <remove-project name="device/google/wahoo-kernel" />
   <remove-project name="device/generic/uml" />
   <remove-project name="platform/external/littlemock" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/power" />
 
 <!-- Remotes -->
   <remote name="bitbucket" fetch="https://bitbucket.org/" />
@@ -82,27 +84,30 @@
   <project name="deadlyindian/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="oreo" />
   <project name="deadlyindian/platform_device_oppo_common" path="device/oppo/common" remote="github" revision="oreo" />
   <project name="deadlyindian/thunder_kernel_oneplus_bacon" path="kernel/oneplus/msm8974" remote="github" revision="thunder_oreo-s" />
-  <project name="deadlyindian/vendor_oneplus_bacon" path="vendor/oneplus/bacon" remote="github" revision="o8x" />
-  <project name="Fabulous-Oreo/hardware_qcom_camera" path="hardware/qcom/camera" remote="github" revision="oreo" />
+  <project name="deadlyindian/vendor_oneplus_bacon" path="vendor/oneplus/bacon" remote="github" revision="o8x-caf" />
+  <project name="Fabulous-Oreo/hardware_qcom_camera" path="hardware/qcom/camera" remote="github" revision="oreo-mr1" />
 
 <!-- HAL's -->
-  <project name="Fabulous-Oreo/hardware_qcom_media-caf" path="hardware/qcom/media/msm8974" remote="github" revision="oreo" />
+  <project name="Fabulous-Oreo/hardware_qcom_audio-caf" path="hardware/qcom/audio/msm8974" remote="github" revision="oreo-mr1" />
+  <project name="Fabulous-Oreo/hardware_qcom_media-caf" path="hardware/qcom/media/msm8974" remote="github" revision="oreo-mr1" />
 
 <!-- Extras -->
-  <project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="staging/lineage-15.1" >
+  <project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-15.1" >
     <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
   </project>
-  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="staging/lineage-15.1" />
-  <project name="Fabulous-Oreo/external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="oreo" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="lineage-15.1" />
+  <project name="Fabulous-Oreo/external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="oreo-mr1" />
   <project name="deadlyindian/platform_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="8.1" />
-  <project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="staging/lineage-15.1" />
+  <project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="lineage-15.1" />
   <project name="platform/external/littlemock" path="external/littlemock" groups="pdk" revision="refs/tags/android-7.1.2_r36" />
-  <project name="LineageOS/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="staging/lineage-15.1" />
-  <project name="LineageOS/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="github" revision="staging/lineage-15.1" />
-  <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="staging/lineage-15.1" />
+  <project name="LineageOS/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_libnfc-nxp" path="external/libnfc-nxp" remote="github" revision="lineage-15.1" />
+  <project name="DirtyUnicorns/android_hardware_qcom_power" path="hardware/qcom/power" remote="github" revision="o8x-caf" />
 
 <!-- Apps -->
-  <project name="Fabulous-Oreo/packages_apps_Snap-bacon" path="packages/apps/Snap-bacon" remote="github" revision="oreo" />
+  <project name="Fabulous-Oreo/packages_apps_Snap-bacon" path="packages/apps/Snap-bacon" remote="github" revision="oreo-mr1" />
 
 <!-- Toolchain -->
   <project name="matthewdalex/arm-eabi-7.x" path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.x" remote="bitbucket" revision="master" />
