@@ -62,4 +62,10 @@
   cd vendor/du;
   git pull $deadly$dcaf vendor_du --rebase;
   croot;
+
+  echo " ";
+  echo -e "\e[1;32mRebasing packages/apps/Settings...\e[0m";
+  cd packages/appsa/Settings;
+  git pull $deadly$dcaf packages_apps_Settings --rebase;
+  croot;
 # ===================================================================================
