@@ -46,12 +46,6 @@
   croot;
 
   echo " ";
-  echo -e "\e[1;32mRebasing system/vold...\e[0m";
-  cd system/vold;
-  git pull $deadly$dcaf system_vold --rebase;
-  croot;
-
-  echo " ";
   echo -e "\e[1;32mRebasing system/sepolicy...\e[0m";
   cd system/sepolicy;
   git pull $deadly$dcaf system_sepolicy --rebase;
@@ -73,5 +67,11 @@
   echo -e "\e[1;32mRebasing packages/apps/DU-Tweaks...\e[0m";
   cd packages/apps/DU-Tweaks;
   git pull $deadly$dcaf packages_apps_DU-Tweaks --rebase;
+  croot;
+
+  echo " ";
+  echo -e "\e[1;32mRebasing packages/services/Telecomm...\e[0m";
+  cd packages/services/Telecomm;
+  git pull $deadly$dcaf packages_services_Telecomm --rebase;
   croot;
 # ===================================================================================
