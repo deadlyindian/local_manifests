@@ -21,6 +21,8 @@
   <remove-project name="android_packages_services_Telecomm" />
   <remove-project name="android_frameworks_opt_net_ims" />
   <remove-project name="android_frameworks_opt_telephony" />
+  <remove-project name="android_packages_apps_Nfc" />
+  <remove-project name="android_system_nfc" />
 
 <!-- Remotes -->
   <remote name="bitbucket" fetch="https://bitbucket.org/" />
@@ -35,7 +37,7 @@
   <project name="thunder_kernel_oneplus_bacon" path="kernel/oneplus/msm8974" remote="deadly" revision="thunder_oreo-s" />>
   <project name="vendor_oneplus_bacon" path="vendor/oneplus/bacon" remote="deadly" revision="o8x-caf" />
   <project name="packages_apps_Snap-bacon" path="packages/apps/Snap" remote="fabulous" />
-  <project name="platform_device_oppo_common" path="device/oppo/common" remote="deadly" revision="o8x" />
+  <project name="platform_device_oppo_common" path="device/oppo/common" remote="deadly" revision="o8x-caf" />
   <project name="platform_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="deadly" revision="8.1" />
 
 <!-- Additional #1 -->
@@ -77,6 +79,9 @@
   <project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-15.1" >
     <copyfile dest="vendor/qcom/Android.bp" src="os_pickup.bp"/>
   </project>
+  <project name="LineageOS/android_packages_apps_Nfc" path="packages/apps/Nfc" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_system_nfc" path="system/nfc" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_system_tools_dtbtool" path="system/tools/dtbtool" remote="github" revision="lineage-15.1" />
 
 <!-- DU Additions -->
   <project name="DirtyUnicorns/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="o8x" />
