@@ -69,9 +69,4 @@
   git pull $deadly$dcaf packages_apps_DU-Tweaks --rebase;
   croot;
 
-  echo " ";
-  echo -e "\e[1;32mRebasing packages/services/Telecomm...\e[0m";
-  cd packages/services/Telecomm;
-  git pull $deadly$dcaf packages_services_Telecomm --rebase;
-  croot;
 # ===================================================================================
