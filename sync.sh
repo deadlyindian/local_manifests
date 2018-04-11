@@ -75,4 +75,10 @@
   git pull $deadly$dcaf build_make --rebase;
   croot;
 
+  echo " ";
+  echo -e "\e[1;32mRebasing frameworks/native...\e[0m";
+  cd frameworks/native;
+  git pull $deadly$dcaf frameworks_native --rebase;
+  croot;
+
 # ===================================================================================
