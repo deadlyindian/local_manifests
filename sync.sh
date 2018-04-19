@@ -64,12 +64,6 @@
   croot;
 
   echo " ";
-  echo -e "\e[1;32mRebasing packages/apps/DU-Tweaks...\e[0m";
-  cd packages/apps/DU-Tweaks;
-  git pull $deadly$dcaf packages_apps_DU-Tweaks --rebase;
-  croot;
-
-  echo " ";
   echo -e "\e[1;32mRebasing build/make...\e[0m";
   cd build/make;
   git pull $deadly$dcaf build_make --rebase;
