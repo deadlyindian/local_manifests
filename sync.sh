@@ -5,7 +5,7 @@
 
 # Then rebase ======================================================================
   deadly="https://github.com/deadlyindian";
-  dcaf="/DirtyUnicorns-O-caf";
+  dcaf="/DirtyUnicorns-O-8x-caf";
   fab="https://github.com/Fabulous-Oreo";
   if [ -z "$(type -t croot)" ]; then
     while [ ! -e './build/envsetup.sh' ]; do
@@ -67,6 +67,18 @@
   echo -e "\e[1;32mRebasing build/make...\e[0m";
   cd build/make;
   git pull $deadly$dcaf build_make --rebase;
+  croot;
+
+  echo " ";
+  echo -e "\e[1;32mRebasing hardware/libhardware...\e[0m";
+  cd hardware/libhardware;
+  git pull $deadly$dcaf hardware_libhardware --rebase;
+  croot;
+
+  echo " ";
+  echo -e "\e[1;32mRebasing hardware/qcom/keymaster...\e[0m";
+  cd hardware/qcom/keymaster;
+  git pull $deadly$dcaf hardware_qcom_keymaster --rebase;
   croot;
 
 # ===================================================================================
