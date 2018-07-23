@@ -18,13 +18,10 @@
   echo " ";
   echo -e "\e[1;32mRebasing frameworks/base...\e[0m";
   cd frameworks/base;
-  git pull $deadly/android_frameworks_base o8x --rebase;
-  croot;
-
-  echo " ";
-  echo -e "\e[1;32mRebasing packages/apps/Dialer...\e[0m";
-  cd packages/apps/Dialer;
-  git pull $fab/packages_apps_Dialer oreo-mr1 --rebase;
+  git pull $deadly/android_frameworks_base o8x --rebase --quiet;
+  if [ $? -ne "0" ]; then
+    echo "Rebase failed...."
+  fi;
   croot;
 
   dir2rebase=(
@@ -37,6 +34,7 @@
     build/make
     hardware/libhardware
     hardware/qcom/keymaster
+    packages/apps/Dialer
   )
 
   for d in ${dir2rebase[@]}; do
@@ -44,7 +42,10 @@
     echo " ";
     echo -e "\e[1;32mRebasing "$d"...\e[0m";
     d=$(echo $d | tr '[/]' '_');
-    git pull $deadly$dcaf "$d" --rebase;
+    git pull $deadly$dcaf "$d" --rebase --quiet;
+    if [ $? -ne "0" ]; then
+      echo "Rebase failed...."
+    fi;
     croot;
   done
 # ===================================================================================
