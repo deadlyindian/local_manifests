@@ -39,6 +39,8 @@
     hardware/qcom/keymaster
     packages/apps/Dialer
     packages/services/Telephony
+    build/soong
+    vendor/extras
   )
 
   for d in ${dir2rebase[@]}; do
